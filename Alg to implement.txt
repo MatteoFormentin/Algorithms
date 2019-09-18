@@ -1,0 +1,29 @@
+Graph:
+    -Finish class
+    -Djikstra
+    -A*
+    -Beam Search
+    -Minimum spanning tree
+
+Arrays:
+    -QuickSort
+    -HeapSort
+    -RadixSort
+
+Trees:
+    -Binary Tree Structure
+    -General Tree
+    -BFS
+    -DFS
+
+Cryptography:
+    -RSA
+    -ELGamal
+    -Diffie-Hellman
+    -Euclidean algorithm 
+
+QUEUE
+    -Priority Queue
+
+Compression
+    -Huffman
