@@ -37,13 +37,8 @@ class Graph():
     def addBidirectionalEdge(self, a_id, b_id, cost=0):
         # Cannot connect Vertex with itself TODO: EMPTY - ONE ELEMENT, link exist, multiple cost...
         if a_id != b_id:
-            a = None
-            b = None
-            for v in self.vertexes:  # search vertex to connect by id
-                if v.id == a_id:
-                    a = v
-                if v.id == b_id:
-                    b = v
+            a = getNodeById(a_id)
+            b = getNodeById(b_id)
 
             if a and b != None:
                 a.addEdge(b, cost)
@@ -68,7 +63,6 @@ class Graph():
             for e in v.edges:
                 print("->" + str(e.dest.id + "(" + str(e.cost) + ")"), "")
 
-
     def getEdges(self):
         out = []
         for v in self.vertexes:
@@ -76,4 +70,3 @@ class Graph():
                 if e not in out:
                     out.append(e)
         return out
-        
