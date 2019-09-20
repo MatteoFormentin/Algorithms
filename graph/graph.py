@@ -23,6 +23,8 @@ class Edge():
         self.cost = cost
 
 # TODO: Adjacent matrix import-export
+
+
 class Graph():
     def __init__(self):
         self.vertexes = []
@@ -34,10 +36,11 @@ class Graph():
 
     # define a new symmetrical connection between two Vertex (selected by friendly id)
     def addBidirectionalEdge(self, a_id, b_id, cost=0):
-        if a_id != b_id:  # Cannot connect Vertex with itself TODO: EMPTY - ONE ELEMENT, link exist, multiple cost...
+        # Cannot connect Vertex with itself TODO: EMPTY - ONE ELEMENT, link exist, multiple cost...
+        if a_id != b_id:
             a = None
             b = None
-            for v in self.vertexes: #search vertex to connect by id
+            for v in self.vertexes:  # search vertex to connect by id
                 if v.id == a_id:
                     a = v
                 if v.id == b_id:
@@ -50,6 +53,13 @@ class Graph():
 
         return False
 
+    def getNodeById(self, id):
+        for v in self.vertexes:  # search vertex to connect by id
+            if v.id == id:
+                return v
+
+        return None
+
     def getSize():
         return len(self.vertexes)
 
@@ -59,15 +69,5 @@ class Graph():
             for e in v.edges:
                 print("->" + str(e.dest.id + "(" + str(e.cost) + ")"), "")
 
-#TEST
-g = Graph()
-g.addVertex("A")
-g.addVertex("B")
-g.addVertex("C")
-g.addVertex("D")
-g.addBidirectionalEdge("A", "B")
-g.addBidirectionalEdge("A", "C")
-g.addBidirectionalEdge("A", "D")
-g.addBidirectionalEdge("B", "C")
-g.addBidirectionalEdge("B", "D")
-g.printGraph()
+
+
