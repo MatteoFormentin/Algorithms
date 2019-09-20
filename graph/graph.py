@@ -12,10 +12,9 @@ class Vertex():
     def addEdge(self, dest, cost=0):
         self.edges.append(Edge(self, dest, cost))
 
+
 # Define a directional link between two nodes.
 # Note: to make the link bidirectional one edge per Vertex is required.
-
-
 class Edge():
     def __init__(self, src, dest, cost=0):
         self.src = src
@@ -70,4 +69,11 @@ class Graph():
                 print("->" + str(e.dest.id + "(" + str(e.cost) + ")"), "")
 
 
-
+    def getEdges(self):
+        out = []
+        for v in self.vertexes:
+            for e in v.edges:
+                if e not in out:
+                    out.append(e)
+        return out
+        

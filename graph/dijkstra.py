@@ -18,8 +18,7 @@ class NodeLabelWrapper():
         self.path_cost = -1
 
 
-def dijkstra(g, start_id):  # Note that graph is of my costum graph implementation, start is the friendly identifier
-
+def dijkstra(g, start_id):  # Note that graph is an instance of my costum graph implementation, start is the friendly identifier
     vertex = g.vertexes
     # Init -> all nodes have infinite cost (-1) and no prec node
     nodes = [NodeLabelWrapper(v) for v in vertex]  # not visited
@@ -66,6 +65,8 @@ def getLabeledNodeById(id, labeled_list):
     return None
 
 # Utils to search in a list a NodeLabelWapper from its corresponding vertex
+
+
 def getLabeledNodes(node, labeled_list):
     for n in labeled_list:
         if node is n.node:

@@ -1,14 +1,17 @@
 Graph:
-    -Finish class
-    -Djikstra
+    -Graph data structure DONE
+    -Djikstra DONE
     -A*
     -Beam Search
-    -Minimum spanning tree
+    -Minimum spanning tree 
 
 Arrays:
+    -MergeSort DONE
     -QuickSort
     -HeapSort
     -RadixSort
+
+    -Binary Search DONE
 
 Trees:
     -Binary Tree Structure
