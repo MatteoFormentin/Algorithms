@@ -65,9 +65,7 @@ def getLabeledNodeById(id, labeled_list):
             return n
     return None
 
-# Utils to get a NodeLabelWapper from a list from its corresponding vertex
-
-
+# Utils to search in a list a NodeLabelWapper from its corresponding vertex
 def getLabeledNodes(node, labeled_list):
     for n in labeled_list:
         if node is n.node:
