@@ -10,15 +10,8 @@ def kruskal(graph):
     partitions = []
     edges = graph.getEdges().copy()
 
-    while len(edges) > 0:
-        # print status of partitions
-        for e in partitions:
-            print("[", end='')
-            for p in e:
-                print(str(p.id), end='')
-            print("]", end='')
-        print()
-
+    # stop when all edges have been considered or when we have as much nodes as edges minus one
+    while len(edges) > 0 and len(sol)/2 < len(graph.vertexes)-1:
         # get minimum cost edge
         curr = getMinimumCostEdge(edges)
         edges.remove(curr)
@@ -66,6 +59,15 @@ def kruskal(graph):
             opposite = getOppositeEdge(curr, edges)
             sol.append(opposite)
             edges.remove(opposite)
+
+        # print status of partitions
+        for e in partitions:
+            print("[", end='')
+            for p in e:
+                print(str(p.id), end='')
+            print("]", end='')
+        print()
+
 
     return sol
 
