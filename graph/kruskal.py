@@ -69,6 +69,8 @@ def kruskal(graph):
 
     return sol
 
+# get the edge with minimum path cost
+
 
 def getMinimumCostEdge(edges):
     min = edges[0]
@@ -77,12 +79,16 @@ def getMinimumCostEdge(edges):
             min = e
     return min
 
+# get the complementar edge
+
 
 def getOppositeEdge(e, edges):
     for i in edges:
         if e.src == i.dest and e.dest == i.src:
             return i
     return None
+
+# get the subpartition to wich a node belong
 
 
 def getNodeSubPartiton(node, partitions):
@@ -120,12 +126,9 @@ g.addBidirectionalEdge("E", "F", 6)
 
 g.addBidirectionalEdge("G", "D", 5)
 
-
 # g.printGraph()
 
-
 sol = kruskal(g)
-
-print("Result")
+print("Result:")
 for e in sol:
-    print(str(e.src.id) + " " + str(e.dest.id))
+    print(str(e.src.id) + " " + str(e.dest.id) + " " + str(e.cost))
