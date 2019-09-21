@@ -9,10 +9,10 @@ def mergeSort(array):
 
     mid = round(len(array) / 2)
 
-    #Recursion: first left branch, than right one 
-    left = mergeSort(array[0:mid]) 
+    # Recursion: first left branch, than right one
+    left = mergeSort(array[0:mid])
     right = mergeSort(array[mid:])
-    return merge(left, right) #Merge the result and go up
+    return merge(left, right)  # Merge the result and go up
 
 
 def merge(left, right):
@@ -28,14 +28,14 @@ def merge(left, right):
                 j += 1
             return merged
 
-        #Same but for other array case
+        # Same but for other array case
         if j == len(right):
             while i < len(left):
                 merged.append(left[i])
                 i += 1
             return merged
 
-        #Standard case search in pairs the minimum -> fill with them -> move only min array by one -> repeat 
+        # Standard case search in pairs the minimum -> fill with them -> move only min array by one -> repeat
         if(left[i] <= right[j]):
             merged.append(left[i])
             i += 1
@@ -44,7 +44,3 @@ def merge(left, right):
             j += 1
 
     return merged
-
-
-print(mergeSort([1, 3, 5, 2, 7, 4, 9, 0, 23]))
-print(mergeSort([12, 15, 23, 4, 6, 10, 35]))

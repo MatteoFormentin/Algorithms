@@ -15,9 +15,9 @@ Arrays:
 
 Trees:
     -Binary Tree Structure
-    -General Tree
-    -BFS
-    -DFS
+    -General Tree DONE
+    -BFS DONE
+    -DFS DONE
 
 Cryptography:
     -RSA

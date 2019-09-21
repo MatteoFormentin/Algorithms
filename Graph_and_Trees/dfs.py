@@ -16,6 +16,7 @@ def dfs(graph):
     for n in graph.vertexes: #cycle is needed in case one node is not accesible from the root (single direction link)
         if n in white:
             dfs_visit(n, white, grey, black)
+    return black
 
 
 def dfs_visit(n, white, grey, black):

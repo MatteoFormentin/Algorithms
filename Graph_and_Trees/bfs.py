@@ -33,14 +33,4 @@ def bfs(graph, root_id):
         grey.remove(curr)
         black.append(curr)
 
-
-# TEST
-t = Tree("A")
-t.addChild("A", "B")
-t.addChild("A", "C")
-t.addChild("A", "D")
-
-t.addChild("B", "E")
-t.addChild("E", "F")
-t.printGraph()
-bfs(t, "A")
+    return black
