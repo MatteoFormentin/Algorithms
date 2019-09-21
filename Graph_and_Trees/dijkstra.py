@@ -6,7 +6,7 @@
 # If the adj nodes has not infinite as label it is check if new reach cost is minor. When visited, each node is moved in a visited list, then
 # it is choosed the node not already visited with minimum total cost label as next to be examineted.
 # I choose the min since else i can't examinate path other then the direct one since the algorithm explore only not visited adjacent.
-# When to visit list is empty or all nodes in to be visited have infinite has cost stop.
+# When to visit list is empty or all nodes in to be visited have infinite as cost stop.
 
 from Graph_and_Trees.tree import *
 from Graph_and_Trees.graph import *

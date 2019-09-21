@@ -54,7 +54,7 @@ class Graph():
 
         return None
 
-    def getSize():
+    def getSize(self):
         return len(self.vertexes)
 
     def printGraph(self):
