@@ -1,7 +1,6 @@
 # TREE DATA STRUCTURE
 # General unordered tree implementation, rely on graph class (tree is just an acyclic graph)
-from graph import *
-
+from Graph_and_Trees.graph import *
 
 class Tree(Graph):
     def __init__(self, root_id):
@@ -15,7 +14,7 @@ class Tree(Graph):
     def getRoot(self):
         return self.vertexes[0]
 
-    def deleteNode(node_id):  #  TODO:finish
+    def deleteNode(self, node_id):  #  TODO:finish
         d = self.getNodeById(node_id)
         if d == None:
             return False

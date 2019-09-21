@@ -3,8 +3,8 @@
 # and finally when all adjacent has been visited black colored
 # Nodes are marked as grey since in a cyclic graph they can be already been visited
 
-from tree import *
-from graph import *
+from Graph_and_Trees.tree import *
+from Graph_and_Trees.graph import *
 
 
 def bfs(graph, root_id):
@@ -22,7 +22,6 @@ def bfs(graph, root_id):
 
     while len(queue) > 0:
         curr = queue.pop(0)  # Get another node to examneted
-        print(curr.id)
         for e in curr.edges:
             if e.dest in white:
                 # Grey color all children

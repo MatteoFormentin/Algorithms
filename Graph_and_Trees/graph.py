@@ -37,8 +37,8 @@ class Graph():
     def addBidirectionalEdge(self, a_id, b_id, cost=0):
         # Cannot connect Vertex with itself TODO: EMPTY - ONE ELEMENT, link exist, multiple cost...
         if a_id != b_id:
-            a = getNodeById(a_id)
-            b = getNodeById(b_id)
+            a = self.getNodeById(a_id)
+            b = self.getNodeById(b_id)
 
             if a and b != None:
                 a.addEdge(b, cost)

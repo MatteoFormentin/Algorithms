@@ -8,8 +8,8 @@
 # I choose the min since else i can't examinate path other then the direct one since the algorithm explore only not visited adjacent.
 # When to visit list is empty or all nodes in to be visited have infinite has cost stop.
 
-from graph import *
-
+from Graph_and_Trees.tree import *
+from Graph_and_Trees.graph import *
 
 class NodeLabelWrapper():
     def __init__(self, node):

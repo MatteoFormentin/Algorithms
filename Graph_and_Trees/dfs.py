@@ -4,8 +4,8 @@
 # Nodes are marked as grey since in a cyclic graph they can be already been visited
 
 
-from tree import *
-from graph import *
+from Graph_and_Trees.tree import *
+from Graph_and_Trees.graph import *
 
 
 def dfs(graph):
@@ -20,7 +20,6 @@ def dfs(graph):
 
 
 def dfs_visit(n, white, grey, black):
-    print(n.id)
     #mark current as grey
     white.remove(n)
     grey.append(n)
@@ -32,15 +31,3 @@ def dfs_visit(n, white, grey, black):
             dfs_visit(e.dest, white, grey, black)
     grey.remove(n)  # ramification end -> color black
     black.append(n)
-
-
-# TEST
-t = Tree("A")
-t.addChild("A", "B")
-t.addChild("A", "C")
-t.addChild("A", "D")
-
-t.addChild("B", "E")
-t.addChild("E", "F")
-t.printGraph()
-dfs(t)

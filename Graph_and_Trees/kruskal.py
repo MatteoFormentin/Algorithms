@@ -2,8 +2,8 @@
 # Used to find the minimum spanning tree -> the tree (graph with no loop) that realizes an hamiltoniam graph on a loop one
 # It works considering only edge of graph, since all nodes will be covered (hamiltonian graph)
 
-from graph import *
-
+from Graph_and_Trees.tree import *
+from Graph_and_Trees.graph import *
 
 def kruskal(graph):
     sol = []
