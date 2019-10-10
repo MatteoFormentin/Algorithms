@@ -1,4 +1,4 @@
-#HEAPSORT
+# HEAPSORT
 # How it Works: it build the Max Heap and then expoloit that ordinated data structure.
 #
 # HEAP: A binary tree where root is bigger than all child of all sublevel. Can be rappresented by an array were root is in first cell, then first level children, then second...
@@ -9,9 +9,11 @@
 #     /   \
 # 4(3)    1(4)
 #
-# To make a heap from an array strating from the level before leaf current root should be compared with the leaf and swapped if minor than one
-# than the modified subtree should be heapified again with recursion. The last level checked is the first root node, so the build start from last
-# array element to the first.
+# To make a heap from an array starting from the level before leafs ones current root should be compared with the leaf and swapped if minor than one
+# than the modified subtree should be heapified again with recursion, that will put the old root down to its place. The last level checked is the first
+# root node, so the build start from last array element to the first.
+# Note that the heapify algorithm required the two subtree to be heaps since it only checked the modified subtree and not the others,
+# so it's necessary to first heapify the lowest levels then go to the highest
 #
 # Once build the heap, the heap sort algorithm simply take the first element of the array (the max of array) and  put it to the end, than it rebuild the max heap
 # Reducing the array of one element (the last wich is ordered)
@@ -31,7 +33,7 @@ def heapify(array, n, i):
         largest = right
 
     if largest != i:
-        # Swap
+        # Swap with last element
         temp = array[largest]
         array[largest] = array[i]
         array[i] = temp
