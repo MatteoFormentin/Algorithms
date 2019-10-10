@@ -7,8 +7,8 @@ Graph:
 
 Arrays:
     -MergeSort DONE
-    -QuickSort
-    -HeapSort
+    -QuickSort  DONE
+    -HeapSort   DONE
     -RadixSort
 
     -Binary Search DONE

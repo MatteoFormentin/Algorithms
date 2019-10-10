@@ -1,3 +1,6 @@
+#HEAPSORT
+# How it Works: it build the Max Heap and then expoloit that ordinated data structure.
+#
 # HEAP: A binary tree where root is bigger than all child of all sublevel. Can be rappresented by an array were root is in first cell, then first level children, then second...
 # The foundamental property is that if i is the subtree root, left element is at 2*i+1 index and right at 2*i+2
 #        10(0)
@@ -10,7 +13,7 @@
 # than the modified subtree should be heapified again with recursion. The last level checked is the first root node, so the build start from last
 # array element to the first.
 #
-# Once build the heap, the algorithm simply take the first element of the array (the max of array) and  put it to the end, than it rebuild the max heap
+# Once build the heap, the heap sort algorithm simply take the first element of the array (the max of array) and  put it to the end, than it rebuild the max heap
 # Reducing the array of one element (the last wich is ordered)
 
 

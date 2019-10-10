@@ -2,6 +2,7 @@ import unittest
 from Arrays.BinarySearch import *
 from Arrays.Mergesort import *
 from Arrays.Heapsort import *
+from Arrays.Quicksort import *
 
 
 class TestArray(unittest.TestCase):
@@ -23,6 +24,13 @@ class TestArray(unittest.TestCase):
                          0, 1, 2, 3, 4, 5, 7, 9, 23])
         self.assertEqual(heapSort([12, 15, 23, 4, 6, 10, 35]), [
             4, 6, 10, 12, 15, 23, 35])
+
+    def test_quick_sort(self):
+        self.assertEqual(quickSort([1, 3, 5, 2, 7, 4, 9, 0, 23]), [
+                         0, 1, 2, 3, 4, 5, 7, 9, 23])
+        self.assertEqual(quickSort([12, 15, 23, 4, 6, 10, 35]), [
+            4, 6, 10, 12, 15, 23, 35])
+
 
 
 if __name__ == '__main__':
