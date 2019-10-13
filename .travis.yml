@@ -10,4 +10,4 @@ python:
   - "nightly"  # nightly build
 # command to run tests
 script:
-  - unittest
+  - sh travis.sh run_tests --coverage
