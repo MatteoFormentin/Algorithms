@@ -5,33 +5,33 @@
 [![Build Status](https://travis-ci.com/MatteoFormentin/Algorithms.svg?branch=master)](https://travis-ci.com/MatteoFormentin/Algorithms)
 
 * Graph:
-  * Graph data structure DONE
-  * Djikstra DONE
+  * Graph data structure ✅
+  * Djikstra ✅
   * A*
   * Beam Search
-  * Minimum spanning tree DONE
+  * Minimum spanning tree ✅
 
 * Arrays:
-  * MergeSort DONE
-  * QuickSort  DONE
-  * HeapSort   DONE
-  * Binary Search DONE
+  * MergeSort ✅
+  * QuickSort  ✅
+  * HeapSort   ✅
+  * Binary Search ✅
 
 * Trees:
   * Binary Tree Structure
-  * General Tree DONE
-  * BFS DONE
-  * DFS DONE
+  * General Tree ✅
+  * BFS ✅
+  * DFS ✅
 
 * Cryptography:
   * RSA
   * ELGamal
   * Diffie-Hellman
-  * Euclidean algorithm DONE
+  * Euclidean algorithm ✅
   * Extended Euclidean algorithm
 
 * Queue:
-  * Priority Queue DONE
+  * Priority Queue ✅
 
 * Compression
   * Huffman
