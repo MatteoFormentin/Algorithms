@@ -1,6 +1,8 @@
-# ALGORITHMS
+# ALGORITHMS 
 
 ## A Collection of algorithm implemented in python
+
+[![Build Status](https://travis-ci.com/MatteoFormentin/Algorithms.svg?branch=master)](https://travis-ci.com/MatteoFormentin/Algorithms)
 
 * Graph:
   * Graph data structure DONE
