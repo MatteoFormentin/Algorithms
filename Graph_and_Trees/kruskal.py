@@ -20,6 +20,7 @@ def kruskal(graph):
         src_part = getNodeSubPartiton(curr.src, partitions)
         dest_part = getNodeSubPartiton(curr.dest, partitions)
 
+        # UNION FIND Data Structure
         # src and destionation belong to a prtition -> possible loop formation
         # if they are in the same partition, they will create a loop -> do not add
         # if they belong to two partitions now the tow subtrees are connected -> join partitions

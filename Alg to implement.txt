@@ -9,8 +9,6 @@ Arrays:
     -MergeSort DONE
     -QuickSort  DONE
     -HeapSort   DONE
-    -RadixSort
-
     -Binary Search DONE
 
 Trees:
@@ -26,7 +24,7 @@ Cryptography:
     -Euclidean algorithm 
 
 QUEUE
-    -Priority Queue
+    -Priority Queue DONE
 
 Compression
     -Huffman

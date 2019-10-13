@@ -8,7 +8,7 @@ def quickSort(array):
         return array
 
     m = int(len(array) / 2-1)
-    #Actually inefficient by a memory point of view: it would be best to work irectly on the array itself
+    #Actually inefficient by a memory point of view: it would be best to work directly on the array itself
     l = []
     r = []
     for i in array:
