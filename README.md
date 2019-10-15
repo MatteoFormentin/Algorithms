@@ -26,12 +26,18 @@
 * Cryptography:
   * RSA
   * ELGamal
-  * Diffie-Hellman
+  * Diffie-Hellman ✅
   * Euclidean algorithm ✅
   * Extended Euclidean algorithm
+  * Baby Step - Giant Step
+  * Blum Blum Shub
 
 * Queue:
   * Priority Queue ✅
+
+* Artificial Intelligence:
+  * MinMax
+  * Alfa - Beta Pruning
 
 * Compression
   * Huffman
