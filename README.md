@@ -43,3 +43,6 @@
   * Huffman
 
 * Backtrack
+
+* Fuzzy Match 
+  * Levenshtein distance
