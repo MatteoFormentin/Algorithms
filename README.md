@@ -44,5 +44,5 @@
 
 * Backtrack
 
-* Fuzzy Match 
-  * Levenshtein distance
+* Fuzzy Match
+  * Levenshtein distance ✅
