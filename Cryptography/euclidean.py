@@ -20,7 +20,7 @@ def euclidean(a, b):
         return b
 
     k = 0
-    r_prec_prec = b # Derived from the equations, just to compact the alg
+    r_prec_prec = b  # Derived from the equations, just to compact the alg
     r_prec = a
 
     while True:
@@ -34,10 +34,3 @@ def euclidean(a, b):
             r_prec = r
 
     return r_prec
-
-
-'''# q_0 = Math.ceil(a/b)  # Calculate how many int b is in a
-        r_prec_prec = a % b  # Calculate the reminder -> a = q_0 * b + r_0
-
-        #q_1 = Math.ceil(b/r_prec_prec)
-        r_prec = b % r_prec_prec'''

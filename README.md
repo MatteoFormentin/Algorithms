@@ -1,4 +1,4 @@
-# ALGORITHMS 
+# ALGORITHMS
 
 ### A Collection of algorithm implemented in python
 
@@ -13,12 +13,12 @@
 
 * Arrays:
   * MergeSort ✅
-  * QuickSort  ✅
-  * HeapSort   ✅
+  * QuickSort ✅
+  * HeapSort ✅
   * Binary Search ✅
 
 * Trees:
-  * Binary Tree Structure
+  * Binary Search Tree Structure
   * General Tree ✅
   * BFS ✅
   * DFS ✅

@@ -26,9 +26,9 @@ def levenshteinDistance(a, b):
                     c = 1
 
                 # M[i][j] = min{M[i-1][j-1] + c , M[i][j-1] + 1 , M[i-1][j] + 1 }
-                # d[i - 1, j] + 1,     // insert - go right
-                # d[i, j - 1] + 1,      // delete - go down
-                # d[i - 1, j - 1] + c   // substitute (c==1)/do nothing (c==0) - go down-right
+                # d[i - 1, j] + 1,      insert - go right
+                # d[i, j - 1] + 1,      delete - go down
+                # d[i - 1, j - 1] + c   substitute (c==1)/do nothing (c==0) - go down-right
                 matrix[i][j] = min(matrix[i-1][j-1] + c,
                                    min(matrix[i][j-1] + 1, matrix[i-1][j]+1))
 
